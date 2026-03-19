@@ -1,0 +1,128 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || !Editor)",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || !Editor)",
+    "bindings": {
+      "ctrl-l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || !Editor)",
+    "bindings": {
+      "ctrl-k": "workspace::ActivatePaneUp",
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || !Editor)",
+    "bindings": {
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space s f": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space s g": "workspace::NewSearch",
+    },
+  },
+  // {
+  //   "context": "((VimControl && !menu) || !Editor)",
+  //   "bindings": {
+  //     "cmd-]": "workspace::ActivateNextPane",
+  //   },
+  // },
+  // {
+  //   "context": "((VimControl && !menu) || !Editor)",
+  //   "bindings": {
+  //     "cmd-[": "workspace::ActivatePreviousPane",
+  //   },
+  // },
+  {
+    "context": "menu",
+    "bindings": {
+      "ctrl-y": "editor::ConfirmCompletion",
+    },
+  },
+  // {
+  //   "context": "Editor",
+  //   "bindings": {
+  //     "cmd-]": null,
+  //   },
+  // },
+  // {
+  //   "context": "Editor",
+  //   "bindings": {
+  //     "cmd-[": null,
+  //   },
+  // },
+  {
+    "context": "VimControl && (Editor && mode == full)",
+    "bindings": {
+      "-": "pane::RevealInProjectPanel",
+    },
+  },
+  {
+    "context": "Editor && VimControl",
+    "bindings": {
+      "space f": "editor::Format",
+    },
+  },
+  {
+    "context": "Workspace && vim_mode != insert",
+    "bindings": {
+      "space space": [
+        "tab_switcher::Toggle",
+        {
+          "select_last": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space c a": "editor::ToggleCodeActions",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space a": null,
+    },
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "space r n": "editor::Rename",
+    },
+  },
+]

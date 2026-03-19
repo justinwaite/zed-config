@@ -1,0 +1,60 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+    "enabled": true
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "vim": {
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+  },
+  "agent_buffer_font_size": 18.0,
+  "agent_servers": {
+    "cursor": {
+      "type": "registry",
+    },
+  },
+  "languages": {
+    "TypeScript": {
+      "tab_size": 2,
+    },
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme",
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "base_keymap": null,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha - No Italics",
+  },
+  "search": {
+    "search_on_input": true,
+  },
+  "formatter": {
+    "language_server": {
+      "name": "oxfmt"
+    }
+  },
+}
