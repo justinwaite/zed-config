@@ -125,4 +125,82 @@
       "space r n": "editor::Rename",
     },
   },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "space h p": "editor::ToggleHunkDiff"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-up": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-down": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-left": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-right": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || Terminal",
+    "bindings": {
+      "ctrl-shift-up": "vim::ResizePaneUp"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "bindings": {
+      "ctrl-w +": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || Terminal",
+    "bindings": {
+      "ctrl-shift-down": "vim::ResizePaneDown"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "bindings": {
+      "ctrl-w -": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || Terminal",
+    "bindings": {
+      "ctrl-shift-left": "vim::ResizePaneLeft"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "bindings": {
+      "ctrl-w <": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || Terminal",
+    "bindings": {
+      "ctrl-shift-right": "vim::ResizePaneRight"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "bindings": {
+      "ctrl-w >": null
+    }
+  }
 ]
