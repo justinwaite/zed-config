@@ -10,49 +10,49 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-    },
+    }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore"
-    },
+    }
   },
   {
     "context": "((VimControl && !menu) || !Editor)",
     "bindings": {
-      "ctrl-h": "workspace::ActivatePaneLeft",
-    },
+      "ctrl-h": "workspace::ActivatePaneLeft"
+    }
   },
   {
     "context": "((VimControl && !menu) || !Editor)",
     "bindings": {
-      "ctrl-l": "workspace::ActivatePaneRight",
-    },
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
   },
   {
     "context": "((VimControl && !menu) || !Editor)",
     "bindings": {
-      "ctrl-k": "workspace::ActivatePaneUp",
-    },
+      "ctrl-k": "workspace::ActivatePaneUp"
+    }
   },
   {
     "context": "((VimControl && !menu) || !Editor)",
     "bindings": {
-      "ctrl-j": "workspace::ActivatePaneDown",
-    },
+      "ctrl-j": "workspace::ActivatePaneDown"
+    }
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space s f": "file_finder::Toggle",
-    },
+      "space s f": "file_finder::Toggle"
+    }
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space s g": "workspace::NewSearch",
-    },
+      "space s g": "workspace::NewSearch"
+    }
   },
   // {
   //   "context": "((VimControl && !menu) || !Editor)",
@@ -69,8 +69,8 @@
   {
     "context": "menu",
     "bindings": {
-      "ctrl-y": "editor::ConfirmCompletion",
-    },
+      "ctrl-y": "editor::ConfirmCompletion"
+    }
   },
   // {
   //   "context": "Editor",
@@ -87,48 +87,54 @@
   {
     "context": "VimControl && (Editor && mode == full)",
     "bindings": {
-      "-": "pane::RevealInProjectPanel",
-    },
+      "-": "pane::RevealInProjectPanel"
+    }
   },
   {
     "context": "Editor && VimControl",
     "bindings": {
-      "space f": "editor::Format",
-    },
+      "space f": "editor::Format"
+    }
   },
   {
-    "context": "Workspace && vim_mode != insert",
+    "context": "VimControl",
     "bindings": {
       "space space": [
         "tab_switcher::Toggle",
         {
-          "select_last": true,
-        },
-      ],
-    },
+          "select_last": true
+        }
+      ]
+    }
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space c a": "editor::ToggleCodeActions",
-    },
+      "space c a": "editor::ToggleCodeActions"
+    }
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space a": null,
-    },
+      "space a": null
+    }
   },
   {
     "context": "VimControl",
     "bindings": {
-      "space r n": "editor::Rename",
-    },
+      "space r n": "editor::Rename"
+    }
   },
   {
     "context": "VimControl",
     "bindings": {
-      "space h p": "editor::ToggleHunkDiff"
+      "space h p": "editor::ToggleSelectedDiffHunks"
+    }
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "space h r": "git::Restore"
     }
   },
   {
@@ -201,6 +207,33 @@
     "context": "(VimControl && !menu) || (!Editor && !Terminal)",
     "bindings": {
       "ctrl-w >": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-n": "multi_workspace::NextProject"
+    }
+  },
+  {
+    "context": "ThreadsSidebar && !Editor",
+    "unbind": {
+      "] p": "multi_workspace::NextProject"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-p": "multi_workspace::PreviousProject"
+    }
+  },
+  {
+    "context": "ThreadsSidebar && !Editor",
+    "unbind": {
+      "[ p": "multi_workspace::PreviousProject"
+    }
+  },
+  {
+    "bindings": {
+      "alt-cmd-shift-t": "git::Worktree"
     }
   }
 ]
