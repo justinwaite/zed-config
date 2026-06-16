@@ -1,0 +1,17 @@
+{
+  "Route module": {
+    "prefix": "route",
+    "body": [],
+    "description": "Create a new RR7 route module"
+  },
+  "Insert Effect Generator": {
+    "prefix": "egf",
+    "body": ["Effect.gen(function* () {", "  $0", "})"],
+    "description": "Inserts an Effect generator comprehension"
+  },
+  "Insert Effect fn": {
+    "prefix": "eff",
+    "body": ["Effect.fn('${1:FunctionName}')(function* () {", "  $0", "})"],
+    "description": "Insert a new Effect generator fn"
+  }
+}
