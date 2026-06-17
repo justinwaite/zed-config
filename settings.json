@@ -17,11 +17,7 @@
       "enabled": true,
       "remote": false,
       "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest",
-        "--auto-connect"
-      ]
+      "args": ["-y", "chrome-devtools-mcp@latest", "--auto-connect"]
     }
   },
   "diff_view_style": "split",
